@@ -35,7 +35,7 @@ void print(Node_Trie *head, string s)
     if (head->is_end)
     {
         cout << s << endl;
-        cout << head->contact;
+        cout << head->contact << endl;
     }
 
     map<char, Node_Trie *>::iterator it;
@@ -66,7 +66,7 @@ void printAll(Node_Trie *head, string query)
 int main()
 {
     int n = 5;
-    string arr[5] = {"Mr Abc", "Xyz", "Xyz abc", "abcd ", "Xyz abcde"};
+    string arr[5] = {"Ms Divya", "Div", "Divya Darshana", "Divya ", "Divi"};
     long long int c[5] = {9234777609, 8210015218, 9070203841, 8023456718, 1234567895};
 
     Node_Trie *head = new Node_Trie();
@@ -77,13 +77,13 @@ int main()
         cout << " done " << endl;
     }
 
-    string query = "Mr Abc";
+    string query = "Div";
     printAll(head, query);
 
     cout << "********************************" << endl
          << endl;
 
-    query = "Mr Xyz Abc";
+    query = "Door";
     printAll(head, query);
     return 0;
 }
