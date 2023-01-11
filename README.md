@@ -1,5 +1,10 @@
 # phonebook_system
 
 Hello our aim is to make phonebook system. 
-Currently we have a simple file handling phonebook system. We need to further optimize it by implementing tries . It is in process. If anybody of you are confident enough please make a new file in this repository with tries implemented. The file handling would still be reqired but insteaad of reading a  single record one after another, we will read and write a trie itself from the file and perform further operations on it.
+Currently we are working with two versions.
+
+First in order to understand the functionality we aimed at making a simple file handling phonebook system in C++.
+
+Second version aims at further optimizing the search and other operations by implementing tries. File handling here deals
+with serializing and deserializing the trie to write and read it from the file.It is currently in progress.
 
